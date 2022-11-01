@@ -10,7 +10,14 @@ namespace CarLotSimulator
     public class CarLot
     {
         #region Properties
-        public List<Car> Cars { get; set; }
+        public List<Car> Cars { get; set; } //= new List<Car>();
+
+        #endregion
+
+        #region Fields
+        
+        public static int NumberOfCars = 0;
+        
         #endregion
 
         #region Constructor
@@ -19,7 +26,7 @@ namespace CarLotSimulator
             Cars = new List<Car>();
         }
         #endregion
-
+        
         #region Methods
         public void Add (Car car)
         {

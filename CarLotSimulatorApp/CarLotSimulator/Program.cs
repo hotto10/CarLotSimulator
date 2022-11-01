@@ -43,8 +43,9 @@ namespace CarLotSimulator
             //Custom Constuctor
             var myCar3 = new Car(2018, "Pontiac", "Grand Prix", "It sucks", "Makes Lots of Noise", "Are you serious???");
             carlot.Add(myCar3);
+            CarLot.NumberOfCars++;
+            Console.WriteLine($"Number of cars in parking lot: {CarLot.NumberOfCars}");
 
-            
 
             myCar1.MakeEngineNoise(myCar1.EngineNoise);
             myCar2.MakeEngineNoise(myCar2.EngineNoise);
@@ -54,6 +55,8 @@ namespace CarLotSimulator
             myCar3.MakeHornNoise(myCar3.HonkNoise);
 
             carlot.ShowCarList();
+
+           
 
             //*************BONUS*************//
 

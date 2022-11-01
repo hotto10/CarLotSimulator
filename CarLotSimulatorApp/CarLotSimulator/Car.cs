@@ -17,7 +17,8 @@ namespace CarLotSimulator
 
         public Car()
         {
-
+            CarLot.NumberOfCars++;
+            Console.WriteLine($"Number of cars in parking lot: {CarLot.NumberOfCars}");
         }
         public Car(int year, string make, string model, string engineNoise, string honkNoise, string isDriveable)
         {
